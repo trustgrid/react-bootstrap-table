@@ -1079,7 +1079,7 @@ class BootstrapTable extends Component {
     if (this.props.pagination) {
       // debugger;
       const { sizePerPage } = this.state;
-      const currLastPage = Math.ceil(this.store.getDataNum() / sizePerPage);
+      const currLastPage = Math.ceil(this.store.getDataNum() / sizePerPage) || 1;
       let { currPage } = this.state;
       if (currPage > currLastPage) currPage = currLastPage;
       // console.log(Util.getNormalizedPage(currPage));
