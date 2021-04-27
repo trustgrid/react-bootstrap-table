@@ -486,7 +486,7 @@ class TableBody extends Component {
     return (
       <td onClick={ e => {
         this.handleClickonSelectColumn(e, !selected, rowIndex, row);
-      } } style={ { textAlign: 'center' } }>
+      } } style={ { textAlign: 'center', verticalAlign: 'middle' } }>
       { CustomComponent ?
         <CustomComponent type={ inputType } checked={ selected } disabled={ disabled }
           rowIndex={ rowIndex }
