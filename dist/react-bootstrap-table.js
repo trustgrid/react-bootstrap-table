@@ -2555,9 +2555,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(BootstrapTable, 'BootstrapTable', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/BootstrapTable.js');
+	  __REACT_HOT_LOADER__.register(BootstrapTable, 'BootstrapTable', '/src/src/BootstrapTable.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/BootstrapTable.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/BootstrapTable.js');
 	}();
 
 	;
@@ -3903,7 +3903,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	  Copyright (c) 2018 Jed Watson.
+	  Copyright (c) 2017 Jed Watson.
 	  Licensed under the MIT License (MIT), see
 	  http://jedwatson.github.io/classnames
 	*/
@@ -3914,7 +3914,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		var hasOwn = {}.hasOwnProperty;
 
-		function classNames() {
+		function classNames () {
 			var classes = [];
 
 			for (var i = 0; i < arguments.length; i++) {
@@ -3925,22 +3925,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 				if (argType === 'string' || argType === 'number') {
 					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					if (arg.length) {
-						var inner = classNames.apply(null, arg);
-						if (inner) {
-							classes.push(inner);
-						}
+				} else if (Array.isArray(arg) && arg.length) {
+					var inner = classNames.apply(null, arg);
+					if (inner) {
+						classes.push(inner);
 					}
 				} else if (argType === 'object') {
-					if (arg.toString === Object.prototype.toString) {
-						for (var key in arg) {
-							if (hasOwn.call(arg, key) && arg[key]) {
-								classes.push(key);
-							}
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
 						}
-					} else {
-						classes.push(arg.toString());
 					}
 				}
 			}
@@ -5123,9 +5117,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(CONST_VAR, 'CONST_VAR', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Const.js');
+	  __REACT_HOT_LOADER__.register(CONST_VAR, 'CONST_VAR', '/src/src/Const.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Const.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/Const.js');
 	}();
 
 	;
@@ -5597,11 +5591,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableHeaderColumn, 'TableHeaderColumn', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(TableHeaderColumn, 'TableHeaderColumn', '/src/src/TableHeaderColumn.js');
 
-	  __REACT_HOT_LOADER__.register(filterTypeArray, 'filterTypeArray', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(filterTypeArray, 'filterTypeArray', '/src/src/TableHeaderColumn.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableHeaderColumn.js');
 	}();
 
 	;
@@ -5759,7 +5753,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/util.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/util.js');
 	}();
 
 	;
@@ -5987,13 +5981,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(legalComparators, 'legalComparators', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Date.js');
+	  __REACT_HOT_LOADER__.register(legalComparators, 'legalComparators', '/src/src/filters/Date.js');
 
-	  __REACT_HOT_LOADER__.register(dateParser, 'dateParser', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Date.js');
+	  __REACT_HOT_LOADER__.register(dateParser, 'dateParser', '/src/src/filters/Date.js');
 
-	  __REACT_HOT_LOADER__.register(DateFilter, 'DateFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Date.js');
+	  __REACT_HOT_LOADER__.register(DateFilter, 'DateFilter', '/src/src/filters/Date.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Date.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/filters/Date.js');
 	}();
 
 	;
@@ -6146,9 +6140,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TextFilter, 'TextFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Text.js');
+	  __REACT_HOT_LOADER__.register(TextFilter, 'TextFilter', '/src/src/filters/Text.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Text.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/filters/Text.js');
 	}();
 
 	;
@@ -6285,9 +6279,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(RegexFilter, 'RegexFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Regex.js');
+	  __REACT_HOT_LOADER__.register(RegexFilter, 'RegexFilter', '/src/src/filters/Regex.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Regex.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/filters/Regex.js');
 	}();
 
 	;
@@ -6487,11 +6481,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(optionsEquals, 'optionsEquals', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Select.js');
+	  __REACT_HOT_LOADER__.register(optionsEquals, 'optionsEquals', '/src/src/filters/Select.js');
 
-	  __REACT_HOT_LOADER__.register(SelectFilter, 'SelectFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Select.js');
+	  __REACT_HOT_LOADER__.register(SelectFilter, 'SelectFilter', '/src/src/filters/Select.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Select.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/filters/Select.js');
 	}();
 
 	;
@@ -6776,11 +6770,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(legalComparators, 'legalComparators', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Number.js');
+	  __REACT_HOT_LOADER__.register(legalComparators, 'legalComparators', '/src/src/filters/Number.js');
 
-	  __REACT_HOT_LOADER__.register(NumberFilter, 'NumberFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Number.js');
+	  __REACT_HOT_LOADER__.register(NumberFilter, 'NumberFilter', '/src/src/filters/Number.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filters/Number.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/filters/Number.js');
 	}();
 
 	;
@@ -7087,13 +7081,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(Checkbox, 'Checkbox', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeader.js');
+	  __REACT_HOT_LOADER__.register(Checkbox, 'Checkbox', '/src/src/TableHeader.js');
 
-	  __REACT_HOT_LOADER__.register(getSortOrder, 'getSortOrder', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeader.js');
+	  __REACT_HOT_LOADER__.register(getSortOrder, 'getSortOrder', '/src/src/TableHeader.js');
 
-	  __REACT_HOT_LOADER__.register(TableHeader, 'TableHeader', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeader.js');
+	  __REACT_HOT_LOADER__.register(TableHeader, 'TableHeader', '/src/src/TableHeader.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableHeader.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableHeader.js');
 	}();
 
 	;
@@ -7163,9 +7157,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(SelectRowHeaderColumn, 'SelectRowHeaderColumn', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/SelectRowHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(SelectRowHeaderColumn, 'SelectRowHeaderColumn', '/src/src/SelectRowHeaderColumn.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/SelectRowHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/SelectRowHeaderColumn.js');
 	}();
 
 	;
@@ -7260,9 +7254,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(ExpandRowHeaderColumn, 'ExpandRowHeaderColumn', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/ExpandRowHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(ExpandRowHeaderColumn, 'ExpandRowHeaderColumn', '/src/src/ExpandRowHeaderColumn.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/ExpandRowHeaderColumn.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/ExpandRowHeaderColumn.js');
 	}();
 
 	;
@@ -7414,9 +7408,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableFooter, 'TableFooter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableFooter.js');
+	  __REACT_HOT_LOADER__.register(TableFooter, 'TableFooter', '/src/src/TableFooter.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableFooter.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableFooter.js');
 	}();
 
 	;
@@ -8125,7 +8119,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        'td',
 	        { onClick: function onClick(e) {
 	            _this3.handleClickonSelectColumn(e, !selected, rowIndex, row);
-	          }, style: { textAlign: 'center', verticalAlign: 'middle' } },
+	          }, style: { textAlign: 'center' } },
 	        CustomComponent ? _react2.default.createElement(CustomComponent, { type: inputType, checked: selected, disabled: disabled,
 	          rowIndex: rowIndex,
 	          onChange: function onChange(e) {
@@ -8221,9 +8215,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableBody, 'TableBody', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableBody.js');
+	  __REACT_HOT_LOADER__.register(TableBody, 'TableBody', '/src/src/TableBody.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableBody.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableBody.js');
 	}();
 
 	;
@@ -8482,9 +8476,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableRow, 'TableRow', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableRow.js');
+	  __REACT_HOT_LOADER__.register(TableRow, 'TableRow', '/src/src/TableRow.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableRow.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableRow.js');
 	}();
 
 	;
@@ -8762,9 +8756,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableColumn, 'TableColumn', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableColumn.js');
+	  __REACT_HOT_LOADER__.register(TableColumn, 'TableColumn', '/src/src/TableColumn.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableColumn.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableColumn.js');
 	}();
 
 	;
@@ -9217,9 +9211,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableEditColumn, 'TableEditColumn', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableEditColumn.js');
+	  __REACT_HOT_LOADER__.register(TableEditColumn, 'TableEditColumn', '/src/src/TableEditColumn.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableEditColumn.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableEditColumn.js');
 	}();
 
 	;
@@ -9367,9 +9361,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(editor, 'editor', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Editor.js');
+	  __REACT_HOT_LOADER__.register(editor, 'editor', '/src/src/Editor.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Editor.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/Editor.js');
 	}();
 
 	;
@@ -9412,7 +9406,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(notice, 'notice', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Notification.js');
+	  __REACT_HOT_LOADER__.register(notice, 'notice', '/src/src/Notification.js');
 	}();
 
 	;
@@ -9493,9 +9487,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(ExpandComponent, 'ExpandComponent', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/ExpandComponent.js');
+	  __REACT_HOT_LOADER__.register(ExpandComponent, 'ExpandComponent', '/src/src/ExpandComponent.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/ExpandComponent.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/ExpandComponent.js');
 	}();
 
 	;
@@ -9983,9 +9977,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(PaginationList, 'PaginationList', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/PaginationList.js');
+	  __REACT_HOT_LOADER__.register(PaginationList, 'PaginationList', '/src/src/pagination/PaginationList.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/PaginationList.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/pagination/PaginationList.js');
 	}();
 
 	;
@@ -10091,9 +10085,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(PageButton, 'PageButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/PageButton.js');
+	  __REACT_HOT_LOADER__.register(PageButton, 'PageButton', '/src/src/pagination/PageButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/PageButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/pagination/PageButton.js');
 	}();
 
 	;
@@ -10224,11 +10218,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(sizePerPageDefaultClass, 'sizePerPageDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/SizePerPageDropDown.js');
+	  __REACT_HOT_LOADER__.register(sizePerPageDefaultClass, 'sizePerPageDefaultClass', '/src/src/pagination/SizePerPageDropDown.js');
 
-	  __REACT_HOT_LOADER__.register(SizePerPageDropDown, 'SizePerPageDropDown', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/SizePerPageDropDown.js');
+	  __REACT_HOT_LOADER__.register(SizePerPageDropDown, 'SizePerPageDropDown', '/src/src/pagination/SizePerPageDropDown.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/pagination/SizePerPageDropDown.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/pagination/SizePerPageDropDown.js');
 	}();
 
 	;
@@ -10950,9 +10944,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(ToolBar, 'ToolBar', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ToolBar.js');
+	  __REACT_HOT_LOADER__.register(ToolBar, 'ToolBar', '/src/src/toolbar/ToolBar.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ToolBar.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/ToolBar.js');
 	}();
 
 	;
@@ -11190,7 +11184,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    afterOpen: _propTypes2.default.string.isRequired,
 	    beforeClose: _propTypes2.default.string.isRequired
 	  })]),
-	  appElement: _propTypes2.default.oneOfType([_propTypes2.default.instanceOf(_safeHTMLElement2.default), _propTypes2.default.instanceOf(_safeHTMLElement.SafeHTMLCollection), _propTypes2.default.instanceOf(_safeHTMLElement.SafeNodeList), _propTypes2.default.arrayOf(_propTypes2.default.instanceOf(_safeHTMLElement2.default))]),
+	  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
 	  onAfterOpen: _propTypes2.default.func,
 	  onRequestClose: _propTypes2.default.func,
 	  closeTimeoutMS: _propTypes2.default.number,
@@ -11677,7 +11671,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  bodyOpenClassName: _propTypes2.default.string,
 	  htmlOpenClassName: _propTypes2.default.string,
 	  ariaHideApp: _propTypes2.default.bool,
-	  appElement: _propTypes2.default.oneOfType([_propTypes2.default.instanceOf(_safeHTMLElement2.default), _propTypes2.default.instanceOf(_safeHTMLElement.SafeHTMLCollection), _propTypes2.default.instanceOf(_safeHTMLElement.SafeNodeList), _propTypes2.default.arrayOf(_propTypes2.default.instanceOf(_safeHTMLElement2.default))]),
+	  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
 	  onAfterOpen: _propTypes2.default.func,
 	  onAfterClose: _propTypes2.default.func,
 	  onRequestClose: _propTypes2.default.func,
@@ -12001,74 +11995,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (typeof useElement === "string" && _safeHTMLElement.canUseDOM) {
 	    var el = document.querySelectorAll(useElement);
 	    assertNodeList(el, useElement);
-	    useElement = el;
+	    useElement = "length" in el ? el[0] : el;
 	  }
 	  globalElement = useElement || globalElement;
 	  return globalElement;
 	}
 
 	function validateElement(appElement) {
-	  var el = appElement || globalElement;
-	  if (el) {
-	    return Array.isArray(el) || el instanceof HTMLCollection || el instanceof NodeList ? el : [el];
-	  } else {
+	  if (!appElement && !globalElement) {
 	    (0, _warning2.default)(false, ["react-modal: App element is not defined.", "Please use `Modal.setAppElement(el)` or set `appElement={el}`.", "This is needed so screen readers don't see main content", "when modal is opened. It is not recommended, but you can opt-out", "by setting `ariaHideApp={false}`."].join(" "));
 
-	    return [];
+	    return false;
 	  }
+
+	  return true;
 	}
 
 	function hide(appElement) {
-	  var _iteratorNormalCompletion = true;
-	  var _didIteratorError = false;
-	  var _iteratorError = undefined;
-
-	  try {
-	    for (var _iterator = validateElement(appElement)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	      var el = _step.value;
-
-	      el.setAttribute("aria-hidden", "true");
-	    }
-	  } catch (err) {
-	    _didIteratorError = true;
-	    _iteratorError = err;
-	  } finally {
-	    try {
-	      if (!_iteratorNormalCompletion && _iterator.return) {
-	        _iterator.return();
-	      }
-	    } finally {
-	      if (_didIteratorError) {
-	        throw _iteratorError;
-	      }
-	    }
+	  if (validateElement(appElement)) {
+	    (appElement || globalElement).setAttribute("aria-hidden", "true");
 	  }
 	}
 
 	function show(appElement) {
-	  var _iteratorNormalCompletion2 = true;
-	  var _didIteratorError2 = false;
-	  var _iteratorError2 = undefined;
-
-	  try {
-	    for (var _iterator2 = validateElement(appElement)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-	      var el = _step2.value;
-
-	      el.removeAttribute("aria-hidden");
-	    }
-	  } catch (err) {
-	    _didIteratorError2 = true;
-	    _iteratorError2 = err;
-	  } finally {
-	    try {
-	      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-	        _iterator2.return();
-	      }
-	    } finally {
-	      if (_didIteratorError2) {
-	        throw _iteratorError2;
-	      }
-	    }
+	  if (validateElement(appElement)) {
+	    (appElement || globalElement).removeAttribute("aria-hidden");
 	  }
 	}
 
@@ -12158,7 +12109,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.canUseDOM = exports.SafeNodeList = exports.SafeHTMLCollection = undefined;
+	exports.canUseDOM = undefined;
 
 	var _exenv = __webpack_require__(54);
 
@@ -12169,10 +12120,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var EE = _exenv2.default;
 
 	var SafeHTMLElement = EE.canUseDOM ? window.HTMLElement : {};
-
-	var SafeHTMLCollection = exports.SafeHTMLCollection = EE.canUseDOM ? window.HTMLCollection : {};
-
-	var SafeNodeList = exports.SafeNodeList = EE.canUseDOM ? window.NodeList : {};
 
 	var canUseDOM = exports.canUseDOM = EE.canUseDOM;
 
@@ -12826,11 +12773,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(defaultModalClassName, 'defaultModalClassName', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModal.js');
+	  __REACT_HOT_LOADER__.register(defaultModalClassName, 'defaultModalClassName', '/src/src/toolbar/InsertModal.js');
 
-	  __REACT_HOT_LOADER__.register(InsertModal, 'InsertModal', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModal.js');
+	  __REACT_HOT_LOADER__.register(InsertModal, 'InsertModal', '/src/src/toolbar/InsertModal.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModal.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/InsertModal.js');
 	}();
 
 	;
@@ -12990,9 +12937,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(InsertModalHeader, 'InsertModalHeader', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalHeader.js');
+	  __REACT_HOT_LOADER__.register(InsertModalHeader, 'InsertModalHeader', '/src/src/toolbar/InsertModalHeader.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalHeader.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/InsertModalHeader.js');
 	}();
 
 	;
@@ -13161,9 +13108,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(InsertModalFooter, 'InsertModalFooter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalFooter.js');
+	  __REACT_HOT_LOADER__.register(InsertModalFooter, 'InsertModalFooter', '/src/src/toolbar/InsertModalFooter.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalFooter.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/InsertModalFooter.js');
 	}();
 
 	;
@@ -13326,9 +13273,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(InsertModalBody, 'InsertModalBody', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalBody.js');
+	  __REACT_HOT_LOADER__.register(InsertModalBody, 'InsertModalBody', '/src/src/toolbar/InsertModalBody.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertModalBody.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/InsertModalBody.js');
 	}();
 
 	;
@@ -13437,11 +13384,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(insertBtnDefaultClass, 'insertBtnDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertButton.js');
+	  __REACT_HOT_LOADER__.register(insertBtnDefaultClass, 'insertBtnDefaultClass', '/src/src/toolbar/InsertButton.js');
 
-	  __REACT_HOT_LOADER__.register(InsertButton, 'InsertButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertButton.js');
+	  __REACT_HOT_LOADER__.register(InsertButton, 'InsertButton', '/src/src/toolbar/InsertButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/InsertButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/InsertButton.js');
 	}();
 
 	;
@@ -13550,11 +13497,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(deleteBtnDefaultClass, 'deleteBtnDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/DeleteButton.js');
+	  __REACT_HOT_LOADER__.register(deleteBtnDefaultClass, 'deleteBtnDefaultClass', '/src/src/toolbar/DeleteButton.js');
 
-	  __REACT_HOT_LOADER__.register(DeleteButton, 'DeleteButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/DeleteButton.js');
+	  __REACT_HOT_LOADER__.register(DeleteButton, 'DeleteButton', '/src/src/toolbar/DeleteButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/DeleteButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/DeleteButton.js');
 	}();
 
 	;
@@ -13663,11 +13610,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(exportCsvBtnDefaultClass, 'exportCsvBtnDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ExportCSVButton.js');
+	  __REACT_HOT_LOADER__.register(exportCsvBtnDefaultClass, 'exportCsvBtnDefaultClass', '/src/src/toolbar/ExportCSVButton.js');
 
-	  __REACT_HOT_LOADER__.register(ExportCSVButton, 'ExportCSVButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ExportCSVButton.js');
+	  __REACT_HOT_LOADER__.register(ExportCSVButton, 'ExportCSVButton', '/src/src/toolbar/ExportCSVButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ExportCSVButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/ExportCSVButton.js');
 	}();
 
 	;
@@ -13779,11 +13726,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(showSelectedOnlyBtnDefaultClass, 'showSelectedOnlyBtnDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ShowSelectedOnlyButton.js');
+	  __REACT_HOT_LOADER__.register(showSelectedOnlyBtnDefaultClass, 'showSelectedOnlyBtnDefaultClass', '/src/src/toolbar/ShowSelectedOnlyButton.js');
 
-	  __REACT_HOT_LOADER__.register(ShowSelectedOnlyButton, 'ShowSelectedOnlyButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ShowSelectedOnlyButton.js');
+	  __REACT_HOT_LOADER__.register(ShowSelectedOnlyButton, 'ShowSelectedOnlyButton', '/src/src/toolbar/ShowSelectedOnlyButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ShowSelectedOnlyButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/ShowSelectedOnlyButton.js');
 	}();
 
 	;
@@ -13889,9 +13836,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(SearchField, 'SearchField', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/SearchField.js');
+	  __REACT_HOT_LOADER__.register(SearchField, 'SearchField', '/src/src/toolbar/SearchField.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/SearchField.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/SearchField.js');
 	}();
 
 	;
@@ -13992,11 +13939,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(clearBtnDefaultClass, 'clearBtnDefaultClass', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ClearSearchButton.js');
+	  __REACT_HOT_LOADER__.register(clearBtnDefaultClass, 'clearBtnDefaultClass', '/src/src/toolbar/ClearSearchButton.js');
 
-	  __REACT_HOT_LOADER__.register(ClearSearchButton, 'ClearSearchButton', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ClearSearchButton.js');
+	  __REACT_HOT_LOADER__.register(ClearSearchButton, 'ClearSearchButton', '/src/src/toolbar/ClearSearchButton.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ClearSearchButton.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/ClearSearchButton.js');
 	}();
 
 	;
@@ -14155,9 +14102,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableFilter, 'TableFilter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableFilter.js');
+	  __REACT_HOT_LOADER__.register(TableFilter, 'TableFilter', '/src/src/TableFilter.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/TableFilter.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/TableFilter.js');
 	}();
 
 	;
@@ -15033,7 +14980,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(TableDataStore, 'TableDataStore', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/store/TableDataStore.js');
+	  __REACT_HOT_LOADER__.register(TableDataStore, 'TableDataStore', '/src/src/store/TableDataStore.js');
 	}();
 
 	;
@@ -15143,13 +15090,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(saveAs, 'saveAs', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/csv_export_util.js');
+	  __REACT_HOT_LOADER__.register(saveAs, 'saveAs', '/src/src/csv_export_util.js');
 
-	  __REACT_HOT_LOADER__.register(toString, 'toString', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/csv_export_util.js');
+	  __REACT_HOT_LOADER__.register(toString, 'toString', '/src/src/csv_export_util.js');
 
-	  __REACT_HOT_LOADER__.register(exportCSV, 'exportCSV', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/csv_export_util.js');
+	  __REACT_HOT_LOADER__.register(exportCSV, 'exportCSV', '/src/src/csv_export_util.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/csv_export_util.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/csv_export_util.js');
 	}();
 
 	;
@@ -15347,7 +15294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return;
 		}
 
-		__REACT_HOT_LOADER__.register(saveAs, "saveAs", "/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/filesaver.js");
+		__REACT_HOT_LOADER__.register(saveAs, "saveAs", "/src/src/filesaver.js");
 	}();
 
 	;
@@ -15451,7 +15398,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(Filter, 'Filter', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/Filter.js');
+	  __REACT_HOT_LOADER__.register(Filter, 'Filter', '/src/src/Filter.js');
 	}();
 
 	;
@@ -15842,9 +15789,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(ButtonGroup, 'ButtonGroup', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ButtonGroup.js');
+	  __REACT_HOT_LOADER__.register(ButtonGroup, 'ButtonGroup', '/src/src/toolbar/ButtonGroup.js');
 
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/trovarocker/trustgrid/src/cloud/react-bootstrap-table/src/toolbar/ButtonGroup.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/src/src/toolbar/ButtonGroup.js');
 	}();
 
 	;
