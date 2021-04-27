@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint src",
     "test": "jest",
-    "start": "gulp example-server"
+    "start": "gulp example-server",
+    "build": "gulp prod"
   },
   "keywords": [
     "react",
